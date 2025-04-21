@@ -10,7 +10,7 @@ def crear_archivos_por_municipio(df, departamento):
     municipios = df_departamento['MUNICIPIO'].unique()
     
     # Crear directorio para los archivos si no existe
-    output_dir = f"/Users/tecnologynomads/Desktop/serg/hoteyo/datos/output/municipios_{departamento}"
+    output_dir = f"output/municipios_{departamento}"
     os.makedirs(output_dir, exist_ok=True)
     
     # Generar archivo para cada municipio
